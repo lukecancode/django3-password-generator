@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<div class="container text-center">
+<h1>Password Generator</h1>
+<!--now after this, we're gonna add what is called a form-->
+<!--in html; to specify what page we want it to go NEXT (open and close the form)-->
+
+<form action="password"> <!--this action function represents the next page it goes to-->
+
+
+  <select name="length"><!--this select function creates a selection box, in this
+                      case called name so the user can choose the length of the password-->
+    <option value="8">8</option> <!-- this action is the option inside the selection box-->
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12" selected= "selected">12</option> <!-- this is the command to make this the pre-selected
+      value-->
+    <option value="13">13</option>
+    <option value="14">14</option>
+
+  </select> PASSWORD LENGTH
+   <!--end of the selection-->
+
+  <br><!--Line Brake-->
+  <input type="checkbox" name="uppercase"> Uppercase
+  <br>
+  <input type="checkbox" name="special"> Special
+  <br>
+  <input type="checkbox" name="numbers"> Numbers
+  <br>
+  <input type="submit" value="Generate Password" class= "btn btn-primary"> <!-- input tag can be used as a button to submit the form
+    but here we  use is as a button to Generate the password after all the selection made above-->
+
+
+</form>
+</div>
